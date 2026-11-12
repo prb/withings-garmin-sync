@@ -1,0 +1,6 @@
+name: withings-garmin-sync
+runtime:
+  name: python
+  options:
+    toolchain: uv
+description: Serverless Withings to Garmin Weight Sync on AWS Lambda with EventBridge

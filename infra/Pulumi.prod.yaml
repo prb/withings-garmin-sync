@@ -1,0 +1,4 @@
+encryptionsalt: v1:92sq1UT7pZ4=:v1:xxd3imk4z6EwgWDf:TwvV5yG22/ROxn/WH7scOTSdZUTTIQ==
+config:
+  aws:region: us-east-1
+  withings-garmin-sync:alertEmail: paulrbrown@gmail.com

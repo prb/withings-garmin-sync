@@ -1,0 +1,11 @@
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+.idea/
+.vscode/
+*.json
+.env
+.venv/
+.withings_garmin_data/
+.worktrees/
