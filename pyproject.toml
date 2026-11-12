@@ -1,0 +1,46 @@
+[project]
+name = "withings-garmin-sync"
+version = "0.1.0"
+description = "Lightweight serverless tool to push Withings data into Garmin Connect with deletion reconciliation."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = [
+    "garminconnect>=0.3.20",
+    "requests>=2.32.3",
+    "boto3>=1.35.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "hypothesis>=6.100.0",
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+    "boto3-stubs[ssm,sns]>=1.35.0",
+    "types-requests>=2.32.0",
+    "pulumi>=3.100.0",
+    "pulumi-aws>=6.0.0",
+]
+
+[tool.uv]
+exclude-newer = "P3D"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
